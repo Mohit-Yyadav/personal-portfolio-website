@@ -313,7 +313,7 @@
   
   .sidebar {
     margin-bottom: 15px;
-    max-height: 112px;
+    max-height: 142px;
     overflow: hidden;
     transition: var(--transition-2);
   }
@@ -445,6 +445,47 @@
   
   
   
+
+  /* ===== HERO BUTTONS ===== */
+.hero-buttons {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn,
+.btn-outline {
+  font-size: 12px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: 0.3s ease;
+  white-space: nowrap;
+}
+
+/* Primary */
+.btn {
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  color: #fff;
+  font-weight: 500;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(99, 102, 241, 0.4);
+}
+
+/* Outline */
+.btn-outline {
+  border: 1px solid #6366f1;
+  color: #6366f1;
+}
+
+.btn-outline:hover {
+  background: #6366f1;
+  color: #fff;
+}
   
   
   /*-----------------------------------*\
@@ -1230,6 +1271,27 @@
    * responsive larger than 450px screen
    */
   
+@media (max-width: 480px) {
+  .hero-buttons {
+    flex-direction: row;        /* row instead of column */
+    overflow-x: auto;           /* scroll if overflow */
+    white-space: nowrap;        /* prevent wrap */
+    gap: 8px;
+  }
+
+  .btn,
+  .btn-outline {
+    width: auto;                /* remove full width */
+    flex-shrink: 0;             /* prevent shrinking */
+    text-align: center;
+    font-size: 11px;
+    padding: 6px 12px;
+  }
+}
+
+
+
+
   @media (min-width: 450px) {
   
     /**
@@ -1326,11 +1388,15 @@
      */
   
     .sidebar {
-      max-height: 180px;
-      margin-bottom: 30px;
-    }
-  
-    .sidebar.active { max-height: 584px; }
+  max-height: 220px; /* increased */
+  margin-bottom: 30px;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.sidebar.active {
+  max-height: 650px; /* increased */
+}
   
     .sidebar-info { gap: 25px; }
   
@@ -1364,7 +1430,7 @@
       width: calc(100% - 64px);
     }
   
-  
+
   
     /**
      * #NAVBAR
@@ -1868,6 +1934,16 @@
   
     .social-list { justify-content: center; }
   
+
+    .hero-buttons {
+  justify-content: center;
+}
+
+.btn,
+.btn-outline {
+  font-size: 13px;
+  padding: 8px 18px;
+}
   
   
     /**
