@@ -157,3 +157,77 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+// ================================
+// AUTO SCROLL ALL TESTIMONIAL LISTS
+// ================================
+
+// select all sliders
+const sliders = document.querySelectorAll(".testimonials-list");
+
+// function for each slider
+sliders.forEach((slider) => {
+
+  let scrollAmount = 0;
+
+  function autoScroll() {
+    scrollAmount += 1;
+
+    // reset when end reached
+    if (scrollAmount >= slider.scrollWidth - slider.clientWidth) {
+      scrollAmount = 0;
+    }
+
+    slider.scrollTo({
+      left: scrollAmount,
+      behavior: "smooth"
+    });
+  }
+
+  // start auto scroll
+  let interval = setInterval(autoScroll, 30);
+
+  // ================================
+  // PAUSE ON HOVER (important UX)
+  // ================================
+  slider.addEventListener("mouseenter", () => {
+    clearInterval(interval);
+  });
+
+  slider.addEventListener("mouseleave", () => {
+    interval = setInterval(autoScroll, 30);
+  });
+
+});
+
+
+
+
+
+
+function sendEmail(e) {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+
+  if (!name || !email || !message) {
+    alert("Please fill all fields");
+    return;
+  }
+
+  emailjs.send("service_2gr5r7n", "template_v6ci87h", {
+    name: name,
+    email: email,
+    message: message
+  })
+  .then(() => {
+    alert("✅ Message sent successfully!");
+    document.querySelector(".form").reset();
+  })
+  .catch((error) => {
+    console.log(error);
+    alert("❌ Failed to send message.");
+  });
+}
