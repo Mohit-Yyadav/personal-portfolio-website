@@ -44,11 +44,7 @@
       <aside class="sidebar" data-sidebar>
         <div class="sidebar-info">
           <figure class="avatar-box">
-            <img
-              src="./assets/images/mohit.png"
-              alt="Mohit Yadav"
-              width="80"
-            />
+            <img src="./assets/images/mohit.png" alt="Mohit Yadav" width="80" />
           </figure>
 
           <div class="info-content">
@@ -57,10 +53,17 @@
             <!-- 🔥 Strong Professional Title -->
             <p class="title">Full Stack Developer</p>
 
-             <div class="hero-buttons">
-    <a href="https://wa.me/918839233986" target="_blank" class="btn">Hire Me</a>
-    <a href="./assets/images/mohit yadav cv.pdf" download class="btn-outline">Resume</a>
-  </div>
+            <div class="hero-buttons">
+              <a href="https://wa.me/918839233986" target="_blank" class="btn"
+                >Hire Me</a
+              >
+              <a
+                href="./assets/images/mohit yadav cv.pdf"
+                download
+                class="btn-outline"
+                >Resume</a
+              >
+            </div>
           </div>
 
           <button class="info_more-btn" data-sidebar-btn>
@@ -903,587 +906,273 @@
         - #PORTFOLIO
       -->
 
-        <article class="portfolio" data-page="portfolio">
+      <article class="portfolio" data-page="portfolio">
+  <header>
+    <h2 class="h2 article-title">Projects</h2>
+  </header>
 
-          <header>
+  <section class="projects">
+    <ul class="filter-list">
+      <li class="filter-item">
+        <button class="active" data-filter-btn>All</button>
+      </li>
+      <li class="filter-item">
+        <button data-filter-btn>Frontend</button>
+      </li>
+      <li class="filter-item">
+        <button data-filter-btn>Backend</button>
+      </li>
+      <li class="filter-item">
+        <button data-filter-btn>Full Stack</button>
+      </li>
+    </ul>
 
-            <h2 class="h2 article-title">Projects</h2>
+    <div class="filter-select-box">
+      <button class="filter-select" data-select>
+        <div class="select-value" data-selecct-value>Select category</div>
+        <div class="select-icon">
+          <ion-icon name="chevron-down"></ion-icon>
+        </div>
+      </button>
+      <ul class="select-list">
+        <li class="select-item"><button data-select-item>All</button></li>
+        <li class="select-item"><button data-select-item>Full Stack</button></li>
+        <li class="select-item"><button data-select-item>Frontend</button></li>
+        <li class="select-item"><button data-select-item>Backend</button></li>
+        
+      </ul>
+    </div>
 
-          </header>
-
-
-
-          <section class="projects">
-
-            <ul class="filter-list">
-
-              <li class="filter-item">
-
-                <button class="active" data-filter-btn>All</button>
-
-              </li>
-
-
-
-              <li class="filter-item">
-
-                <button data-filter-btn>Frontend</button>
-
-              </li>
-
-
-
-              <li class="filter-item">
-
-                <button data-filter-btn>Backend</button>
-
-              </li>
-
-
-
-              <li class="filter-item">
-
-                <button data-filter-btn>Full Stack</button>
-
-              </li>
-
-            </ul>
-
-
-
-            <div class="filter-select-box">
-
-              <button class="filter-select" data-select>
-
-                <div class="select-value" data-selecct-value>
-
-                  Select category
-
-                </div>
-
-
-
-                <div class="select-icon">
-
-                  <ion-icon name="chevron-down"></ion-icon>
-
-                </div>
-
-              </button>
-
-
-
-              <ul class="select-list">
-
-                <li class="select-item">
-
-                  <button data-select-item>All</button>
-
-                </li>
-
-
-
-                <li class="select-item">
-
-                  <button data-select-item>Frontend</button>
-
-                </li>
-
-
-
-                <li class="select-item">
-
-                  <button data-select-item>Backend</button>
-
-                </li>
-
-
-
-                <li class="select-item">
-
-                  <button data-select-item>Full Stack</button>
-
-                </li>
-
-              </ul>
-
+    <ul class="project-list">
+      <!-- QuickTalk -->
+      <li class="project-item active" data-filter-item data-category="full stack">
+        <a href="javascript:void(0)" onclick="openProject('QuickTalk - Real Time Chat Application', 'QuickTalk is a real-time chat application built using MERN Stack and Socket.io.', 'https://quicktalk-f0nt.onrender.com/', 'https://github.com/Mohit-Yyadav/QuickTalk', 'React, Node.js, Express.js, MongoDB, Socket.io'); return false;">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
             </div>
-
-
-
-            <ul class="project-list">
-
-              <li
-
-                class="project-item active"
-
-                data-filter-item
-
-                data-category="full stack"
-
-              >
-
-                <a href="https://omnirental.onrender.com/">
-
-                  <figure class="project-img">
-
-                    <div class="project-item-icon-box">
-
-                      <ion-icon name="eye-outline"></ion-icon>
-
-                    </div>
-
-
-
-                    <img
-
-                      src="./assets/images/omni.png"
-
-                      alt="finance"
-
-                      loading="lazy"
-
-                    />
-
-                  </figure>
-
-
-
-                  <h3 class="project-title">
-
-                    OmniRental - Rental Management System
-
-                  </h3>
-
-
-
-                  <p class="project-category">Full Stack</p>
-
-                </a>
-
-              </li>
-
-
-
-              <li
-
-                class="project-item active"
-
-                data-filter-item
-
-                data-category="full stack"
-
-              >
-
-                <a
-
-                  href="https://movie-ticketing-system.gt.tc/index.php"
-
-                >
-
-                  <figure class="project-img">
-
-                    <div class="project-item-icon-box">
-
-                      <ion-icon name="eye-outline"></ion-icon>
-
-                    </div>
-
-
-
-                    <img
-
-                      src="./assets/images/project-11.png"
-
-                      alt="finance"
-
-                      loading="lazy"
-
-                    />
-
-                  </figure>
-
-
-
-                  <h3 class="project-title">Movie Ticket Booking System</h3>
-
-
-
-                  <p class="project-category">Full Stack</p>
-
-                </a>
-
-              </li>
-
-
-
-              <li
-
-                class="project-item active"
-
-                data-filter-item
-
-                data-category="full stack"
-
-              >
-
-                <a
-
-                  href="https://github.com/Mohit-Yyadav/online-examination-systen.git"
-
-                >
-
-                  <figure class="project-img">
-
-                    <div class="project-item-icon-box">
-
-                      <ion-icon name="eye-outline"></ion-icon>
-
-                    </div>
-
-
-
-                    <img
-
-                      src="./assets/images/project-12.png"
-
-                      alt="orizon"
-
-                      loading="lazy"
-
-                    />
-
-                  </figure>
-
-
-
-                  <h3 class="project-title">Online Examination System</h3>
-
-
-
-                  <p class="project-category">Full Stack</p>
-
-                </a>
-
-              </li>
-
-
-
-              <li
-
-                class="project-item active"
-
-                data-filter-item
-
-                data-category="full stack"
-
-              >
-
-                <a
-
-                  href="https://github.com/Mohit-Yyadav/Cab-Booking-System.git"
-
-                >
-
-                  <figure class="project-img">
-
-                    <div class="project-item-icon-box">
-
-                      <ion-icon name="eye-outline"></ion-icon>
-
-                    </div>
-
-
-
-                    <img
-
-                      src="./assets/images/cbs.png"
-
-                      alt="fundo"
-
-                      loading="lazy"
-
-                    />
-
-                  </figure>
-
-
-
-                  <h3 class="project-title">Cab Booking system</h3>
-
-
-
-                  <p class="project-category">Full Stack</p>
-
-                </a>
-
-              </li>
-
-
-
-              <li
-
-                class="project-item active"
-
-                data-filter-item
-
-                data-category="full stack"
-
-              >
-
-                <a
-
-                  href="https://github.com/Mohit-Yyadav/Event-Catering-Services.git"
-
-                >
-
-                  <figure class="project-img">
-
-                    <div class="project-item-icon-box">
-
-                      <ion-icon name="eye-outline"></ion-icon>
-
-                    </div>
-
-
-
-                    <img
-
-                      src="./assets/images/Catering service.png"
-
-                      alt="brawlhalla"
-
-                      loading="lazy"
-
-                    />
-
-                  </figure>
-
-
-
-                  <h3 class="project-title">Event Catering Service Platform</h3>
-
-
-
-                  <p class="project-category">Full Stack</p>
-
-                </a>
-
-              </li>
-
-
-
-              <li
-
-                class="project-item active"
-
-                data-filter-item
-
-                data-category="full stack"
-
-              >
-
-                <a
-
-                  href="https://github.com/Mohit-Yyadav/Online-Food-Ordering-Web.git"
-
-                >
-
-                  <figure class="project-img">
-
-                    <div class="project-item-icon-box">
-
-                      <ion-icon name="eye-outline"></ion-icon>
-
-                    </div>
-
-
-
-                    <img
-
-                      src="./assets/images/online food ordering.png"
-
-                      alt="dsm."
-
-                      loading="lazy"
-
-                    />
-
-                  </figure>
-
-
-
-                  <h3 class="project-title">Online Food Ordering System</h3>
-
-
-
-                  <p class="project-category">Full Stack</p>
-
-                </a>
-
-              </li>
-
-
-
-              <li
-
-                class="project-item active"
-
-                data-filter-item
-
-                data-category="frontend"
-
-              >
-
-                <a href="#">
-
-                  <figure class="project-img">
-
-                    <div class="project-item-icon-box">
-
-                      <ion-icon name="eye-outline"></ion-icon>
-
-                    </div>
-
-
-
-                    <img
-
-                      src="./assets/images/portfolio.png"
-
-                      alt="metaspark"
-
-                      loading="lazy"
-
-                    />
-
-                  </figure>
-
-
-
-                  <h3 class="project-title">Personal Portfolio Website</h3>
-
-
-
-                  <p class="project-category">Frontend</p>
-
-                </a>
-
-              </li>
-
-              <!-- 
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-
-              <a href="#">
-
-
-
-                <figure class="project-img">
-
-                  <div class="project-item-icon-box">
-
-                    <ion-icon name="eye-outline"></ion-icon>
-
-                  </div>
-
-
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-
-                </figure>
-
-
-
-                <h3 class="project-title">Summary</h3>
-
-
-
-                <p class="project-category">Web development</p>
-
-
-
-              </a>
-
-            </li>
-
-
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-
-              <a href="#">
-
-
-
-                <figure class="project-img">
-
-                  <div class="project-item-icon-box">
-
-                    <ion-icon name="eye-outline"></ion-icon>
-
-                  </div>
-
-
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-
-                </figure>
-
-
-
-                <h3 class="project-title">Task Manager</h3>
-
-
-
-                <p class="project-category">Applications</p>
-
-
-
-              </a>
-
-            </li>
-
-
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-
-              <a href="#">
-
-
-
-                <figure class="project-img">
-
-                  <div class="project-item-icon-box">
-
-                    <ion-icon name="eye-outline"></ion-icon>
-
-                  </div>
-
-
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-
-                </figure>
-
-
-
-                <h3 class="project-title">Arrival</h3>
-
-
-
-                <p class="project-category">Web development</p>
-
-
-
-              </a>
-
-            </li> -->
-
-            </ul>
-
-          </section>
-
-        </article>
+            <img src="./assets/images/quicktalk.png" alt="QuickTalk" loading="lazy" />
+          </figure>
+          <h3 class="project-title">QuickTalk - Real Time Chat Application</h3>
+          <p class="project-category">Full Stack</p>
+        </a>
+      </li>
+
+      <!-- OmniRental -->
+      <li class="project-item active" data-filter-item data-category="full stack">
+        <a href="javascript:void(0)" onclick="openProject('OmniRental - Rental Management System', 'Complete rental management platform with tenant, owner and payment management.', 'https://omnirental.onrender.com/', 'https://github.com/Mohit-Yyadav/OmniRental', 'React, Node.js, Express.js, MongoDB, Razorpay'); return false;">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+            <img src="./assets/images/omni.png" alt="OmniRental" loading="lazy" />
+          </figure>
+          <h3 class="project-title">OmniRental - Rental Management System</h3>
+          <p class="project-category">Full Stack</p>
+        </a>
+      </li>
+
+      <!-- Movie Ticket -->
+      <li class="project-item active" data-filter-item data-category="full stack">
+        <a href="javascript:void(0)" onclick="openProject('Movie Ticket Booking System', 'Complete movie ticket booking system with user authentication.', 'https://movie-ticketing-system.gt.tc/index.php', 'https://github.com/Mohit-Yyadav/movie-ticket-booking', 'PHP, MySQL, HTML, CSS'); return false;">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+            <img src="./assets/images/project-11.png" alt="Movie Ticket" loading="lazy" />
+          </figure>
+          <h3 class="project-title">Movie Ticket Booking System</h3>
+          <p class="project-category">Full Stack</p>
+        </a>
+      </li>
+
+      <!-- Online Examination -->
+      <li class="project-item active" data-filter-item data-category="full stack">
+        <a href="javascript:void(0)" onclick="openProject('Online Examination System', 'Web-based platform for conducting online exams.', 'https://github.com/Mohit-Yyadav/online-examination-systen', 'https://github.com/Mohit-Yyadav/online-examination-systen', 'PHP, MySQL, JavaScript'); return false;">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+            <img src="./assets/images/project-12.png" alt="Online Exam" loading="lazy" />
+          </figure>
+          <h3 class="project-title">Online Examination System</h3>
+          <p class="project-category">Full Stack</p>
+        </a>
+      </li>
+
+      <!-- Cab Booking -->
+      <li class="project-item active" data-filter-item data-category="full stack">
+        <a href="javascript:void(0)" onclick="openProject('Cab Booking System', 'Cab booking platform with ride scheduling.', 'https://github.com/Mohit-Yyadav/Cab-Booking-System', 'https://github.com/Mohit-Yyadav/Cab-Booking-System', 'PHP, MySQL, JavaScript'); return false;">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+            <img src="./assets/images/cbs.png" alt="Cab Booking" loading="lazy" />
+          </figure>
+          <h3 class="project-title">Cab Booking System</h3>
+          <p class="project-category">Full Stack</p>
+        </a>
+      </li>
+
+      <!-- Event Catering -->
+      <li class="project-item active" data-filter-item data-category="full stack">
+        <a href="javascript:void(0)" onclick="openProject('Event Catering Service Platform', 'Platform for managing catering services for events.', 'https://github.com/Mohit-Yyadav/Event-Catering-Services', 'https://github.com/Mohit-Yyadav/Event-Catering-Services', 'PHP, MySQL, Bootstrap'); return false;">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+            <img src="./assets/images/Catering service.png" alt="Catering" loading="lazy" />
+          </figure>
+          <h3 class="project-title">Event Catering Service Platform</h3>
+          <p class="project-category">Full Stack</p>
+        </a>
+      </li>
+
+      <!-- Online Food Ordering -->
+      <li class="project-item active" data-filter-item data-category="full stack">
+        <a href="javascript:void(0)" onclick="openProject('Online Food Ordering System', 'Food ordering platform with cart and payment.', 'https://github.com/Mohit-Yyadav/Online-Food-Ordering-Web', 'https://github.com/Mohit-Yyadav/Online-Food-Ordering-Web', 'PHP, MySQL, JavaScript'); return false;">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+            <img src="./assets/images/online food ordering.png" alt="Food Ordering" loading="lazy" />
+          </figure>
+          <h3 class="project-title">Online Food Ordering System</h3>
+          <p class="project-category">Full Stack</p>
+        </a>
+      </li>
+
+      <!-- Portfolio -->
+      <li class="project-item active" data-filter-item data-category="frontend">
+        <a href="javascript:void(0)" onclick="openProject('Personal Portfolio Website', 'Responsive personal portfolio website showcasing projects, skills and experience.', 'https://personal-portfolio-website-u47n.onrender.com/', 'https://github.com/Mohit-Yyadav/Portfolio', 'HTML, CSS, JavaScript'); return false;">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+            <img src="./assets/images/portfolio.png" alt="Portfolio" loading="lazy" />
+          </figure>
+          <h3 class="project-title">Personal Portfolio Website</h3>
+          <p class="project-category">Frontend</p>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+<!-- Project Popup Modal - Enhanced UI with Inline CSS -->
+<div id="projectModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; justify-content: center; align-items: center; z-index: 999999; font-family: 'Poppins', sans-serif;">
+  <!-- Overlay -->
+  <div id="projectOverlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.9); backdrop-filter: blur(5px); z-index: 999990;"></div>
+  
+  <!-- Modal Container -->
+  <div style="position: relative; max-width: 650px; width: 90%; background: linear-gradient(135deg, #1e1e2e 0%, #16161a 100%); border-radius: 24px; padding: 35px; z-index: 999995; box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 215, 0, 0.2); border: none; animation: modalSlideIn 0.35s cubic-bezier(0.34, 1.2, 0.64, 1);">
+    
+    <!-- Close Button -->
+    <button id="closeProjectModal" style="position: absolute; top: 20px; right: 20px; background: rgba(255, 255, 255, 0.1); border-radius: 50%; width: 40px; height: 40px; display: flex; justify-content: center; align-items: center; cursor: pointer; color: #ffffff; border: none; font-size: 20px; transition: all 0.3s ease; backdrop-filter: blur(5px);">
+      ✕
+    </button>
+    
+    <!-- Modal Content -->
+    <div style="color: #ffffff;">
+      <!-- Project Icon -->
+      <div style="text-align: center; margin-bottom: 20px;">
+        <div style="width: 70px; height: 70px; background: linear-gradient(135deg, #ffd700, #ff8c00); border-radius: 20px; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 10px; box-shadow: 0 10px 25px rgba(255, 215, 0, 0.3);">
+          <svg width="35" height="35" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2 17L12 22L22 17" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2 12L12 17L22 12" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+      
+      <!-- Project Title -->
+      <h3 id="projectTitle" style="color: #ffd700; margin-bottom: 20px; font-size: 28px; font-weight: 700; text-align: center; letter-spacing: -0.5px;">Project Title</h3>
+      
+      <!-- Project Description -->
+      <div id="projectDescription" style="line-height: 1.7; margin: 20px 0; color: #e0e0e0; font-size: 15px; text-align: center;"></div>
+      
+      <!-- Divider -->
+      <div style="height: 1px; background: linear-gradient(90deg, transparent, #ffd700, transparent); margin: 25px 0;"></div>
+      
+      <!-- Tech Stack Section -->
+      <h4 style="color: #ffd700; margin-bottom: 12px; font-size: 16px; font-weight: 600; display: flex; align-items: center; gap: 8px;">
+        <span>🛠️</span> Tech Stack
+      </h4>
+      <div id="projectTech" style="color: #d0d0d0; background: rgba(0, 0, 0, 0.3); padding: 12px 15px; border-radius: 12px; font-family: 'Courier New', monospace; font-size: 13px; border: 1px solid rgba(255, 215, 0, 0.2);"></div>
+      
+      <br />
+      
+      <!-- Action Buttons -->
+      <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 10px; justify-content: center;">
+        <a href="#" target="_blank" id="projectLink" style="background: linear-gradient(135deg, #ffd700, #ffb347); color: #1a1a1a; padding: 12px 24px; border-radius: 40px; text-decoration: none; display: inline-flex; align-items: center; gap: 10px; font-weight: 600; font-size: 14px; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);">
+          <span>🚀</span> Live Demo
+        </a>
+        <a href="#" target="_blank" id="githubLink" style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); color: #ffffff; padding: 12px 24px; border-radius: 40px; text-decoration: none; display: inline-flex; align-items: center; gap: 10px; font-weight: 600; font-size: 14px; transition: all 0.3s ease; border: 1px solid rgba(255, 255, 255, 0.2);">
+          <span>🐙</span> GitHub
+        </a>
+      </div>
+      
+      <div style="text-align: center; margin-top: 15px;">
+        <a href="#" target="_blank" id="viewProjectLink" style="background: transparent; color: #ffd700; padding: 8px 20px; border-radius: 40px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; font-size: 13px; transition: all 0.3s ease; border: 1px solid #ffd700;">
+          <span>🔗</span> View Full Project
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-40px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+#closeProjectModal:hover {
+  background: #ff4444 !important;
+  transform: rotate(90deg) scale(1.1);
+}
+
+#projectLink:hover, #githubLink:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+#projectLink:hover {
+  background: linear-gradient(135deg, #ffe44d, #ffa500) !important;
+}
+
+#githubLink:hover {
+  background: rgba(255, 255, 255, 0.2) !important;
+  border-color: rgba(255, 215, 0, 0.5) !important;
+}
+
+#viewProjectLink:hover {
+  background: rgba(255, 215, 0, 0.1) !important;
+  transform: translateY(-2px);
+}
+
+/* Scrollbar styling */
+#projectTech::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+#projectTech::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+#projectTech::-webkit-scrollbar-thumb {
+  background: #ffd700;
+  border-radius: 10px;
+}
+</style>
+</article>
 
         <!--
         - #BLOG

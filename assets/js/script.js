@@ -231,3 +231,61 @@ function sendEmail(e) {
     alert("❌ Failed to send message.");
   });
 }
+
+
+
+
+// ========================================
+// PROJECT MODAL - FINAL PRODUCTION CODE
+// ========================================
+
+// Open project function
+window.openProject = function(title, description, liveLink, githubLink, techStack) {
+  // Set content
+  document.getElementById('projectTitle').textContent = title;
+  document.getElementById('projectDescription').textContent = description;
+  document.getElementById('projectLink').href = liveLink;
+  document.getElementById('viewProjectLink').href = liveLink;
+  document.getElementById('githubLink').href = githubLink;
+  document.getElementById('projectTech').textContent = techStack;
+  
+  // Show modal
+  const modal = document.getElementById('projectModal');
+  if (modal) {
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  }
+  
+  return false;
+};
+
+// Close modal function
+window.closeProjectModal = function() {
+  const modal = document.getElementById('projectModal');
+  if (modal) {
+    modal.style.display = 'none';
+    document.body.style.overflow = '';
+  }
+};
+
+// Setup event listeners when page loads
+document.addEventListener('DOMContentLoaded', function() {
+  // Close button
+  const closeBtn = document.getElementById('closeProjectModal');
+  if (closeBtn) {
+    closeBtn.onclick = function(e) {
+      e.stopPropagation();
+      window.closeProjectModal();
+    };
+  }
+  
+  // Escape key to close
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      const modal = document.getElementById('projectModal');
+      if (modal && modal.style.display === 'flex') {
+        window.closeProjectModal();
+      }
+    }
+  });
+});
